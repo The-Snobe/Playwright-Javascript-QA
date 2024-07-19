@@ -9,7 +9,6 @@ class ProfilePage {
         this.emailInput = page.getByLabel('Email (mandatory):');
         this.passwordInput = page.getByLabel('Password (mandatory):', { exact: true });
         this.confirmPasswordInput = page.getByLabel('Confirm Password (mandatory):');
-        this.confirmPasswordInput = page.getByLabel('Confirm Password (mandatory):');
 
         this.dobInput = page.getByLabel('Date ofBirth (optional):');
         this.phoneNumber = page.getByLabel('Phone Number (optional):');
@@ -76,15 +75,15 @@ class ProfilePage {
 
         try {
          //Check whether the element with the text “Success!” is present on the page
-            const successElement = await expect(page.getByText('Success!')).toBeVisible();
+            const successElement = await expect(page.getByText('Success!'));
 
             if (successElement.isVisible()) {
-                console.log(successElement);
+                console.log('Success! is visible');
             } else {
-                console.error(successElement);
+                console.error('Success! is not visible');
             }
         } catch (error) {
-            console.error(successElement);
+            console.error("error not found");
         }
 
     }

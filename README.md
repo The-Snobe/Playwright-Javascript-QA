@@ -8,6 +8,44 @@ URL: https://qa-assessment.pages.dev/
 OS : Windows
 IDE : Visual Studio Code
 
+Playwright : Javascript 
+
+
+Installation
+Install the dependencies and devDependencies to run the test.
+
+Clone (OR) Download this repo as zip folder on to your local machine
+Navigate to project's directory on terminal and run the following commands:
+Clone the repository
+
+git clone https://github.com/The-Snobe/Playwright-Javascript-QA.git
+
+Install dependencies
+
+npm install
+npm init playwright@latest
+npx playwright install 
+Run application
+Run tests in Parallel chrome
+
+npx playwright test –project=chromium - For tests only on chrome browser
+
+Run tests in Parallel firefox
+
+npx playwright test --project=firefox - For tests only on firefox browser
+
+Run tests in Parallel safari
+
+npx playwright test --project=webkit - For tests only on safari browser
+Run tests in Parallel on all browsers (chrome, safari, edge and firefox)
+
+npx playwright test  - For tests only on all browsers
+npx playwright test --headed - For tests only on playwright
+Playwright Test Report
+Html-test-report :
+npx playwright show-report
+
+
 Notes:
 Modify test data in users.json and datasets.json as needed.
 Use test.only to focus on a specific test during development.

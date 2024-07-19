@@ -10,7 +10,7 @@ test.describe('User Profile Creation Tests', () => {
   test.beforeEach(async ({ page }) => {
     profilePage = new ProfilePage(page);
     await page.goto('https://qa-assessment.pages.dev/');
-    //await page.goto("file:///D:/xampp/htdocs/TestPlaywright/inscript/index.html");
+
     await page.waitForLoadState('networkidle');
 
 

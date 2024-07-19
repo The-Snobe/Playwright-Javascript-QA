@@ -18,7 +18,7 @@ Install dependencies
 
 npm install npm init playwright@latest npx playwright install Run application Run tests in Parallel chrome
 
-npx playwright test –project=chromium - For tests only on chrome browser
+npx playwright test –-project=chromium - For tests only on chrome browser
 
 Run tests in Parallel firefox npx playwright test --project=firefox - For tests only on firefox browser
 

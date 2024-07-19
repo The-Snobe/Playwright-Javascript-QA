@@ -9,7 +9,6 @@ class ProfilePage {
         this.emailInput = page.getByLabel('Email (mandatory):');
         this.passwordInput = page.getByLabel('Password (mandatory):', { exact: true });
         this.confirmPasswordInput = page.getByLabel('Confirm Password (mandatory):');
-
         this.dobInput = page.getByLabel('Date ofBirth (optional):');
         this.phoneNumber = page.getByLabel('Phone Number (optional):');
         this.adressInput = page.getByLabel('Address (optioal):');

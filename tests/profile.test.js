@@ -55,7 +55,7 @@ test.describe('User Profile Creation Tests', () => {
 
   });
 
-  test.only('should display error for invalid password', async ({ page }) => {
+  test('should display error for invalid password', async ({ page }) => {
     await profilePage.handleDialog(testData.errorMessagePassword);
     await profilePage.fillMandatoryFields(formData.FirstName, formData.LastName, formData.Email, formData.Empty, formData.Empty);
     await profilePage.submitForm();
@@ -96,6 +96,7 @@ test.describe('User Profile Creation Tests', () => {
     await profilePage.fillOptionalFields(formData.dob, formData.mobileNumber, formData.address, formData.GithubURL, formData.LinkedinURL);
     profilePage.submitForm();
     await profilePage.verifySuccessMessage(); 
+    await page.waitForTimeout(2000);
 
     
 
@@ -114,12 +115,12 @@ test.describe('User Profile Creation Tests', () => {
 
   test('should display error for invalid LinkedIn URL', async ({ page }) => {
 
-    await page.waitForTimeout(2000);
     await profilePage.fillMandatoryFields(formData.FirstName, formData.LastName, formData.Email, formData.Password, formData.Password);
     await profilePage.fillOptionalFields(formData.Empty, formData.Empty, formData.Empty, formData.Empty, formData.LinkedinURL);
     //await page.pause();
     await profilePage.submitForm();
     await profilePage.verifySuccessMessage();
+    await page.waitForTimeout(2000);
 
   });
   

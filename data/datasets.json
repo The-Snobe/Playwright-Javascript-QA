@@ -1,0 +1,25 @@
+{
+    "FirstName": "John",
+    "InvalidfirstName": "John123",
+    "LastName": "Doe",
+    "InvalidfastName": "Doe123",
+    "Email": "john4.doe@example.com",
+    "Invalidemail": "john.doe@example.com",
+    "Empty": "",
+
+    "Password": "P@ssw0rd",
+    "Emptypassword": "",
+    "PasswordWaek": "a",
+    "Confirmpassword": "P@ssw0rd",
+    "Sexe1": "male",
+    "Sexe2": "female",
+    "Sexe3": "Prefer not to say",
+    
+    "dob": "1999-01-01",
+    
+    "mobileNumber": "1234567890",
+    "InvalidMobileNumber": "12345678",
+    "address": "123 Main St, Apt 1",
+    "GithubURL": "https://github.com/johndoe",
+    "LinkedinURL": "https://www.linkedin.com/johndoe"
+  }

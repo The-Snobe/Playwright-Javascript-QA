@@ -1,0 +1,14 @@
+{
+
+    "errorMessageFirstName":"First name must be filled out",
+    "errorMessageLastName":"Last name must be filled out",
+    "errorMessageFNAlphabetical":"First name must contain alphabetical characters only",
+    "errorMessageLNAlphabetical":"Last name must contain alphabetical characters only",
+    "errorMessageEmail":"Email must be filled out",
+    "errorMessageEmailWeak":"the password is weak must contain at least eight characters, including a lowercase letter, an uppercase letter, a symbol and a number",
+    "errorMessagePassword":"password must be filled out",
+    "errorMessageMatch":"Passwords do not match"
+
+    
+
+}

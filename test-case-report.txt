@@ -1,0 +1,52 @@
+Part 1: Explanatory test case + Test case + Bug report
+Objective:
+Create and document test cases and a bug report for the user profile creation page.
+
+testing cases
+
+Check mandatory fields :
+
+1.	 Test that the "First Name" field is mandatory and accepts only alphabetical characters.
+2.	 Test that the "Last Name" field is mandatory and accepts alphabetical characters only.
+3.	 Test that the "Email" field is mandatory and accepts only valid e-mail addresses.
+4.	 Test that the "Password" field is mandatory and accepts alphanumeric characters and symbols.
+5.	 Test that the "Confirm Password" field is mandatory and must match the "Password" field.
+
+Checking optional fields :
+
+1.	 Test that the "Gender" field can accept one of the specified options (male, female, prefer not to say).
+2.	 Check that the "Date of Birth" field accepts a valid date in YYYY-MM-DD format.
+3.	 Test that the "Phone Number" field accepts only numeric characters with a maximum length of 10 digits.
+4.	 Test that the "Address" field accepts alphanumeric characters, spaces and symbols.
+5.	Test that the "LinkedIn URL" field accepts a valid URL.
+6.	 Test that the "GitHub URL" field accepts a valid URL.
+
+
+
+
+
+Bug report
+
+Bug 1: the password is not secure - it must be at least 8 characters long.
+
+Steps to reproduce: Enter 1-character "Password".
+Expected result: Error message indicating that the password is weak must contain at least eight characters, including a lowercase letter, an uppercase letter, a symbol and a number.
+Actual result: The form is submitted without displaying an error message.
+
+Bug 2 : Mismatched Error Message for Empty Password Validation.
+Steps to reproduce: Do not enter a “password”. 
+Expected result: Error message indicating that the password must be filled in.
+Actual result: Error message indicates that the confirmation password must be filled in.
+
+Bug 3: The data entered in the "Confirm Password" field is not hidden.
+
+Steps to reproduce: In "Confirm Password" enter the same password entered in the "Password" field.
+Expected result: The characters entered in the password field are masked.
+Actual result: The characters entered in the password field are not hidden.
+
+Bug 4: The "LinkedIn URL" field is not optional.
+
+Steps to reproduce: Do not enter a URL link in the "LinkedIn URL" field.
+Expected result: The form is submitted without displaying an error message.
+Actual result: Error message indicating that LinkedIn must be filled in.
+
